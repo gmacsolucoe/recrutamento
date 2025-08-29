@@ -160,7 +160,6 @@ elif menu == "🏷️ Upload Currículos":
         st.session_state["arquivos"] = arquivos
         st.success(f"✅ {len(arquivos)} arquivo(s) carregado(s) com sucesso!")
         
-        # Processa e adiciona novos arquivos ao DataFrame existente
         novos_dados = []
         arquivos_carregados_nomes = [f.name for f in st.session_state.get("df_analise", pd.DataFrame())["Nome"].tolist()]
         
